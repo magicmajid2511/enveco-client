@@ -19,7 +19,7 @@ export const getAllCars = () => async (dispatch) => {
 export const addCar = (data) => async (dispatch) => {
   dispatch({ type: LOADING, payload: true });
   try {
-    await axios.post("https://enveco-server.herokuapp.com", data);
+    await axios.post("https://enveco-server.herokuapp.com/api/cars/addCar", data);
     dispatch({ type: LOADING, payload: false });
 
     message.success("Car added successfully");
