@@ -30,7 +30,7 @@ const Register = () => {
     } else if (values.password !== values.cpassword) {
       message.error("Passwords do not match");
     } else {
-      console.log("here")
+      console.log("here");
       dispatch(userRegister(values));
     }
   };
@@ -38,8 +38,8 @@ const Register = () => {
   return (
     <div className="login">
       {loading && <Spinner />}
-      <Row gutter={16} className="d-flex align-items-center">
-        <Col lg={16} style={{ position: "relative" }}>
+      <Row gutter={16} className="d-flex align-items-center center-mobile">
+        <Col lg={16} style={{ position: "relative" }} className="for-mobile">
           <img
             data-aos="slide-left"
             data-aos-duration="1500"
@@ -57,7 +57,7 @@ const Register = () => {
           >
             <h1>Register</h1>
             <hr />
-            <Form.Item name="username" label="Username">
+            <Form.Item name="username" label="Email">
               <Input />
             </Form.Item>
 

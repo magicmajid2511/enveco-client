@@ -8,7 +8,10 @@ export const bookCar = (data) => async (dispatch) => {
   dispatch({ type: LOADING, payload: true });
   console.log(data);
   try {
-    await axios.post("https://enveco-server.herokuapp.com/api/rentals/bookcar", data);
+    await axios.post(
+      "https://enveco-server-final.herokuapp.com/api/rentals/bookcar",
+      data
+    );
     dispatch({ type: LOADING, payload: false });
 
     message.success("Car booked successfully");
@@ -25,7 +28,9 @@ export const bookCar = (data) => async (dispatch) => {
 export const getAllBookings = () => async (dispatch) => {
   dispatch({ type: LOADING, payload: true });
   try {
-    const response = await axios.get("https://enveco-server.herokuapp.com/api/rentals/userRentals");
+    const response = await axios.get(
+      "https://enveco-server-final.herokuapp.com/api/rentals/userRentals"
+    );
     dispatch({ type: GET_ALL_BOOKINGS, payload: response.data });
     dispatch({ type: LOADING, payload: false });
   } catch (error) {

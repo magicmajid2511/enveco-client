@@ -30,8 +30,8 @@ const Login = () => {
   return (
     <div className="login">
       {loading && <Spinner />}
-      <Row gutter={16} className="d-flex align-items-center">
-        <Col lg={16} style={{ position: "relative" }}>
+      <Row gutter={16} className="d-flex align-items-center center-mobile">
+        <Col lg={16} style={{ position: "relative" }} className="for-mobile">
           <img
             data-aos="slide-right"
             data-aos-duration="1500"
@@ -49,7 +49,7 @@ const Login = () => {
           >
             <h1>Login</h1>
             <hr />
-            <Form.Item name="username" label="Username">
+            <Form.Item name="username" label="Email">
               <Input />
             </Form.Item>
 

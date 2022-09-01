@@ -7,7 +7,10 @@ import { LOADING } from "../constants/alertsConstants";
 export const userLogin = (data) => async (dispatch) => {
   dispatch({ type: LOADING, payload: true });
   try {
-    const response = await axios.post("https://enveco-server.herokuapp.com/api/users/login", data);
+    const response = await axios.post(
+      "https://enveco-server-final.herokuapp.com/api/users/login",
+      data
+    );
     localStorage.setItem("user", JSON.stringify(response.data));
     message.success("Login successful");
     dispatch({ type: LOADING, payload: false });
@@ -27,7 +30,10 @@ export const userRegister = (data) => async (dispatch) => {
 
   dispatch({ type: LOADING, payload: true });
   try {
-    await axios.post("https://enveco-server.herokuapp.com/api/users/register", data);
+    await axios.post(
+      "https://enveco-server-final.herokuapp.com/api/users/register",
+      data
+    );
     message.success("Registration successful");
     setTimeout(() => {
       /* navigate("/login") */

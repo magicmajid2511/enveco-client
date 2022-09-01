@@ -29,11 +29,19 @@ const DefaultLayout = (props) => {
               Logout
             </div>
           </Menu.Item>
+          <Menu.Item key="6">
+            <Link to={"/help"}>Help</Link>
+          </Menu.Item>
         </>
       ) : (
-        <Menu.Item key="5">
-          <Link to={"/login"}>Login</Link>
-        </Menu.Item>
+        <>
+          <Menu.Item key="5">
+            <Link to={"/login"}>Login</Link>
+          </Menu.Item>
+          <Menu.Item key="6">
+            <Link to={"/help"}>Help</Link>
+          </Menu.Item>
+        </>
       )}
     </Menu>
   );
@@ -59,11 +67,11 @@ const DefaultLayout = (props) => {
                   </Button>
                 </Dropdown>
               ) : (
-                <Link to={"/login"}>
+                <Dropdown overlay={menu} placement="bottom">
                   <Button>
-                    <UserOutlined /> Login
+                    <UserOutlined />
                   </Button>
-                </Link>
+                </Dropdown>
               )}
             </div>
           </Col>

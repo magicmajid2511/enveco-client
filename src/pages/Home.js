@@ -123,9 +123,6 @@ const Home = ({ user }) => {
 
   return (
     <DefaultLayout>
-      <Link className="button1 box-shadow" to="/help">
-         Help
-        </Link>
       <div className="back-img">
         <Title level={3} className="main-title-text">
           Eco-Friendly & smart car sharing that is good for the enviroment
@@ -138,10 +135,10 @@ const Home = ({ user }) => {
             className="d-flex justify-content-center form-height"
           >
             <div className="box-shadow-1 p-2 where" layout="inline">
-              <span> Country :</span>{" "}
+              <span className="mobile-padding"> Country :</span>{" "}
               <Select
                 showSearch
-                className="selector-width"
+                className="selector-width mobile-padding"
                 allowClear
                 onChange={(value, option) => {
                   if (value) setStates(getStates(option.key));
@@ -166,10 +163,11 @@ const Home = ({ user }) => {
                   </Option>
                 ))}
               </Select>
-              <span> State :</span>{" "}
+              <br className="only-mobile" />{" "}
+              <span className="mobile-padding"> State :</span>{" "}
               <Select
                 showSearch
-                className="selector-width"
+                className="selector-width mobile-padding"
                 size="small"
                 allowClear
                 onChange={(value, option) => {
@@ -245,7 +243,7 @@ const Home = ({ user }) => {
       </div>
       <Divider />
       <Row justify="center" className="p-100 gray-color">
-        <Space size={50}>
+        <Space size={50} className="for-mobile">
           <img src={car} height={250} alt="car" />
           <Title level={5} className="para-text">
             Cars account for a significant part of the world's CO2 emissions. If
@@ -259,7 +257,7 @@ const Home = ({ user }) => {
       </Row>
       <Divider />
       <Row justify="center" className="p-100">
-        <Space size={50}>
+        <Space size={50} className="for-mobile">
           <img src={money} height={350} alt="car" />
           <Title level={5} className="para-text">
             Share your car when you don’t use it and make money of your car when
@@ -273,7 +271,7 @@ const Home = ({ user }) => {
       </Row>
       <Divider />
       <Row justify="center" className="p-100 gray-color">
-        <Space size={50}>
+        <Space size={50} className="for-mobile">
           <img src={tool} height={250} alt="car" />
           <Title level={5} className="para-text">
             You are insured
@@ -285,7 +283,7 @@ const Home = ({ user }) => {
       </Row>
       <Divider />
       <Row justify="center" className="p-100">
-        <Space size={50}>
+        <Space size={50} className="for-mobile">
           <img src={eco} height={250} alt="car" />
           <Title level={4} className="title-text">
             Take care of our Environment
@@ -294,7 +292,7 @@ const Home = ({ user }) => {
       </Row>
       <Divider />
       <Row justify="center" className="p-100 gray-color">
-        <Space size={50}>
+        <Space size={50} className="for-mobile">
           <Title level={4} className="title-text">
             If you rent an electric car then we dont charge any commission
           </Title>

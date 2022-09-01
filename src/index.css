@@ -215,6 +215,14 @@ p {
   text-shadow: 4px 4px 30px black;
 }
 
+.main-title-text-help,
+.main-title-text-help a {
+  color: white !important;
+  text-align: center !important;
+  padding: 10px;
+  text-shadow: 4px 4px 30px black;
+}
+
 .background-repeat {
   background-repeat: repeat-y !important;
 }
@@ -244,4 +252,51 @@ p {
 
 .form-height span {
   color: gray !important;
+}
+
+.only-mobile {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .App {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .for-mobile {
+    flex-direction: column !important;
+  }
+
+  .for-mobile img {
+    height: 150px !important;
+  }
+
+  .p-100 {
+    padding: 25px !important;
+  }
+
+  .para-text {
+    padding: 0 !important;
+  }
+
+  .only-mobile {
+    display: block !important;
+  }
+
+  .form-height {
+    height: 87px !important;
+  }
+
+  .mobile-padding {
+    padding: 6px !important;
+  }
+
+  .center-mobile {
+    justify-content: center !important;
+  }
+
+  .login-logo {
+    left: 52px;
+  }
 }
