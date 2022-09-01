@@ -6,7 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import UserBookings from "./pages/UserBookings";
 import AddCar from "./pages/AddCar";
-import Profile from "./pages/Profile";
+import Profile from "./pages/profile";
 import Help from "./pages/Help";
 import EditCar from "./pages/EditCar";
 import AdminDashboard from "./pages/AdminDashboard";
