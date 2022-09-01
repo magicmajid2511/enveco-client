@@ -42,6 +42,9 @@ const AdminDashboard = ({ user }) => {
               <Link className="button1 box-shadow" to="/addcar">
                 Add New Car
               </Link>
+              <Link className="button1 box-shadow" to="/profile">
+                Profile
+              </Link>
             </div>
           </Col>
         </Row>

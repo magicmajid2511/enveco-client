@@ -123,6 +123,9 @@ const Home = ({ user }) => {
 
   return (
     <DefaultLayout>
+      <Link className="button1 box-shadow" to="/help">
+         Help
+        </Link>
       <div className="back-img">
         <Title level={3} className="main-title-text">
           Eco-Friendly & smart car sharing that is good for the enviroment
