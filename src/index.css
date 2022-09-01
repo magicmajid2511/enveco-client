@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(0, 0%, 100%);
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.box-shadow-1 {
+  box-shadow: rgba(12, 20, 24, 0.12) 0px 2px 4px 0px,
+    rgba(14, 21, 25, 0.32) 0px 2px 16px 0px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(2 121 101);
+}
+
+p {
+  margin: 5px !important;
+  text-align: left;
+  padding: 0;
+}
+
+.p-right {
+  text-align: right !important;
+}
+
+.header {
+  padding: 10px;
+}
+
+.header .ant-btn {
+  box-shadow: none !important;
+  background-color: white !important;
+  color: rgb(2 121 101) !important;
+  border: 1px solid rgb(2 121 101) !important;
+  padding: 3px 15px !important;
+  outline: none !important;
+}
+
+.content {
+  min-height: 80vh;
+}
+
+.anticon-edit {
+  color: black;
+  cursor: pointer;
+}
+
+.anticon-delete {
+  color: red;
+  cursor: pointer;
+}
+
+.anticon svg {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.button1 {
+  box-shadow: none !important;
+  background-color: white !important;
+  color: rgb(2 121 101) !important;
+  border: 1px solid rgb(2 121 101) !important;
+  padding: 3px 15px !important;
+  outline: none !important;
+}
+
+.button1 a {
+  color: rgb(2 121 101) !important;
+}
+
+.button1:focus {
+  border: none;
+}
+
+.button2 {
+  box-shadow: none !important;
+  background-color: white !important;
+  color: rgb(2 121 101) !important;
+  border: 1px solid rgb(2 121 101) !important;
+  padding: 3px 15px !important;
+  outline: none !important;
+  border-radius: 8px !important;
+}
+
+.button2 a {
+  color: #252525 !important;
+}
+
+.button2:focus {
+  border: none;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+}
+
+.car {
+  border-radius: 8px;
+  margin-top: 100px;
+  box-shadow: rgb(12 20 24 / 12%) 0px 2px 4px 0px,
+    rgb(14 21 25 / -3%) 0px 2px 16px 0px;
+}
+
+.ant-card-cover img {
+  height: 170px;
+  width: 100%;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.car-image {
+  height: auto;
+  width: 180px;
+  border-radius: 5px;
+}
+
+.car-image-booking {
+  width: auto;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.login {
+  background: url("../src/assets/back.jpg");
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.login label,
+.login h1 {
+  color: white !important;
+}
+
+.login-form {
+  background-color: rgb(2, 121, 101);
+  box-shadow: rgb(12 20 24 / 29%) 0px 2px 4px 4px,
+    rgb(14 21 25 / 15%) 0px 2px 16px 14px;
+}
+
+.login-form input {
+  border: none !important;
+  color: black;
+  opacity: 0.9;
+}
+
+.login-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 50%;
+  transform: translate(-30px, -45px);
+  font-size: 45px;
+  opacity: 0.2 !important;
+}
+
+.login a {
+  color: white !important;
+}
+
+.login-form .ant-form-item-label > label {
+  color: white !important;
+}
+
+.tofrom {
+  border-radius: 20px;
+  box-shadow: rgba(12, 20, 24, 0.12) 0px 2px 4px 0px,
+    rgba(14, 21, 25, 0.32) 0px 2px 16px 0px;
+}
+
+.title-text {
+  color: rgb(2 121 101) !important;
+  padding: 30px;
+}
+
+.p-100 {
+  padding: 100px;
+}
+
+.gray-color {
+  background-color: #f8f4f4;
+}
+
+.para-text {
+  color: rgb(2 121 101) !important;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.back-img {
+  background: url("../src/assets/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+.main-title-text {
+  color: white !important;
+  padding: 30px;
+  text-shadow: 4px 4px 30px black;
+}
+
+.background-repeat {
+  background-repeat: repeat-y !important;
+}
+
+.box-shadow {
+  box-shadow: rgba(12, 20, 24, 0.12) 0px 2px 4px 0px,
+    rgba(14, 21, 25, 0.32) 0px 2px 16px 0px !important;
+}
+
+.text-color-white,
+.ant-divider-inner-text {
+  color: white !important;
+}
+
+.where {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.selector-width {
+  width: 200px !important;
+}
+
+.form-height {
+  height: 45px !important;
+}
+
+.form-height span {
+  color: gray !important;
+}
