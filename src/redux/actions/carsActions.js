@@ -7,7 +7,7 @@ import { GET_ALL_CARS } from "../constants/carConstants";
 export const getAllCars = () => async (dispatch) => {
   dispatch({ type: LOADING, payload: true });
   try {
-    const response = await axios.get("https://enveco-server.herokuapp.com");
+    const response = await axios.get("https://enveco-server.herokuapp.com/api/cars/getallcars");
     dispatch({ type: GET_ALL_CARS, payload: response.data });
     dispatch({ type: LOADING, payload: false });
   } catch (error) {
