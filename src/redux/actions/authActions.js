@@ -1,5 +1,6 @@
 import axios from "axios";
 import { message } from "antd";
+import { useNavigate } from "react-router-dom";
 
 import { LOADING } from "../constants/alertsConstants";
 
@@ -22,12 +23,15 @@ export const userLogin = (data) => async (dispatch) => {
 };
 
 export const userRegister = (data) => async (dispatch) => {
+  const navigate = useNavigate()
+
   dispatch({ type: LOADING, payload: true });
   try {
     await axios.post("https://enveco-server.herokuapp.com/api/users/register", data);
     message.success("Registration successful");
     setTimeout(() => {
-      window.location.href = "/login";
+      navigate("/login")
+      /* window.location.href = "/login"; */
     }, 500);
 
     dispatch({ type: LOADING, payload: false });
