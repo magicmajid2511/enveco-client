@@ -39,11 +39,10 @@ Sharing economy, where you can rent out your car while it standing. It's better 
 | `GET`      | `/`                                | Main page route.  Renders home `index` view.                                                                                                       
 | `GET`      | `/getallcars`                      | Returns all the cars in the database.
 | `POST`     | `/addcar`                      | Create cars form data to the server.                          | { type,information} 
-| `POST`      | `/editcar`                      | Edit Car details of your added car                         |   { id}
+| `POST`      | `/editcar`                      | Edit Car details of your added car                         |   {id}
 | `POST`      | `/deletecar`                      |  Delete a car by id                                      | {id} 
 | `POST`      | `/bookcar  `                      |  Book a car                                            | { email} 
 | `POST`      | `/userRentals  `                      |Show all rentals of a particular user. | { email,id} 
-
 | `POST`     | `/register`                          | Sends Sign Up info to the server and creates user.  | {Firstname, Surname, email, password}  
 | `POST`     | `/login`                           | Sends Login form data to the server.                         | { email, password }
 
