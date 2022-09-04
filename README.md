@@ -44,7 +44,7 @@ Sharing economy, where you can rent out your car while it standing. It's better 
 | `POST`      | `/bookcar  `                      |  Book a car                                            | { email} 
 | `POST`      | `/userRentals  `                      |Show all rentals of a particular user. | { email,id} 
 
-| `POST`     | `/register`                          | Sends Sign Up info to the server and creates user in the DB. | {Firstname, Surname, email, password}  
+| `POST`     | `/register`                          | Sends Sign Up info to the server and creates user.  | {Firstname, Surname, email, password}  
 | `POST`     | `/login`                           | Sends Login form data to the server.                         | { email, password }
 
 
